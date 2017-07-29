@@ -1,4 +1,4 @@
-"""about_me URL Configuration
+"""about URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -15,11 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from mainApp.views import main_page, works_page, learns_page
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', main_page),
-    url(r'^works/$', works_page),
-    url(r'^learns/$', learns_page),
 ]
